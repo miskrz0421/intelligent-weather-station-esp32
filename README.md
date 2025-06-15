@@ -1,4 +1,4 @@
-# ESP32-S3 Intelligent Weather Station & Data Logger
+# ESP32-S3 Intelligent Weather Station 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) <!-- Optional: Add a license badge -->
 

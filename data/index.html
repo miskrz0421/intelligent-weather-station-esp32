@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Konfiguracja Stacji Pogodowej</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Skonfiguruj Stację Pogodową</h1>
+    <form action="/connect" method="POST">
+      <label for="ssid">Sieć WiFi:</label><br>
+      {{WIFI_LIST}}<br><br> <label for="pass">Hasło WiFi:</label><br>
+      <input type="password" id="pass" name="pass" required><br><br>
+
+      <label for="username">Nazwa użytkownika (do API):</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="serveraddr">Adres serwera API (IP:PORT):</label><br>
+      <input type="text" id="serveraddr" name="serveraddr" placeholder="np. 192.168.1.100:5000" {{SERVER_ADDRESS_VALUE}} required><br><br>  <button type="submit">Połącz</button>
+    </form>
+  </div>
+</body>
+</html>
